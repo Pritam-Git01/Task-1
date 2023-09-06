@@ -1,0 +1,41 @@
+.wraper {
+    height: 24vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.wraper> img{
+    height: 5rem;
+    width: 5rem;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.wraper > h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.wraper > p {
+    font-size: 1rem;
+    padding-top: 0.2rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+}
+.icon{
+    position: absolute;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    bottom: 2.4rem;
+    right: 2.2rem;
+    font-size: 1.3rem;
+    color: rgb(72, 218, 244);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+       background-color: rgb(194, 237, 245);
+    }
+}

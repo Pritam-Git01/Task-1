@@ -1,0 +1,83 @@
+.wraper{
+    display: flex;
+    padding-top: 0.8rem;
+    justify-content: space-evenly;
+}
+
+
+
+.card_wraper{
+    height: 46vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    transition: all 0.3s ease-in-out;
+   
+   
+}
+.first_part{
+    height: 47.2%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    border-bottom: 1px solid rgb(56, 49, 49);
+   
+}
+.first_part > h2{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.first_part > span{
+    font-size: 10px;
+}
+.first_part > p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.first_part > p > span{
+    padding-right: 0.2rem;
+}
+.first_part > button {
+    height: 2rem;
+    width: 8.4rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    font-family: Helvetica;
+    font-size: 0.68rem;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    padding-bottom: 0.35rem;
+    background-color: rgba(232, 211, 95, 0.5);
+}
+.second_part{
+    height: 52.8%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.6rem;
+    justify-content: space-evenly;
+}
+.second_part > span {
+    font-size: 0.78rem;
+    letter-spacing: 0.4px;
+    font-weight: 500;
+}
+.second_part > p{
+    font-size: 0.74rem;
+    font-weight: 540;
+    letter-spacing: 0.5px;
+}
+.second_part > p > span{
+    font-size: 0.8rem;
+    padding-right: 1rem;
+}
+.second_part > a{
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding-left: 1.8rem;
+    text-decoration: underline;
+    cursor: pointer;
+}

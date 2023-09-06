@@ -1,0 +1,75 @@
+.nav{
+    height: 62vh;
+    width: 16vw;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    gap: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.navItem{
+    height: 2.68rem;
+    width: 12rem;
+    display: flex;
+    padding-left: 1rem; 
+    align-items: center;
+    border-radius: 0 0.5rem 0.5rem 0;
+    gap: 0.56rem;
+    background: #fff;
+    cursor: pointer;
+    border: 1px solid rgb(235, 228, 228,0.5);
+}
+.navItem_clicked{
+    height: 2.68rem;
+    width: 12rem;
+    display: flex;
+    padding-left: 1rem; 
+    align-items: center;
+    border-radius: 0 0.5rem 0.5rem 0;
+    gap: 0.56rem;
+    background: #55e4c8;
+    cursor: pointer;
+    border: 1px solid rgb(235, 228, 228,0.5);
+}
+
+.icon{
+    font-size: 1.2rem;
+    color: rgb(57, 160, 239);
+}
+.navItem > p{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.3rem;
+}
+.logout{
+    height: 2.68rem;
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
+    margin-top: 6.82rem;
+    position: relative;
+    cursor: pointer;
+    color: rgb(57, 160, 239);
+    transition: all 0.2s ease-in-out;
+    background-color: rgb(232, 238, 243);
+    &:hover{
+        background-color: rgb(172, 209, 239);
+
+    }
+}
+.logout > button{
+    border: none;
+    height: 100%;
+    color: rgb(57, 160, 239);;
+    background: none;
+    font-size: 1rem;
+
+}
+.log_icon{
+    font-size: 1.5rem;
+    transform: rotate(180deg);
+    position: absolute;
+    margin-left: 4rem;
+}
