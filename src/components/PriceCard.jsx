@@ -23,6 +23,7 @@ const priceData = [
     head: "Standard",
     buttonColor: "red",
   },
+  
   {
     id: 3,
     cutPrice: 799.99,
@@ -33,6 +34,7 @@ const priceData = [
     buttonColor: "blueVoilet",
   },
 ];
+
 const PriceCard = () => {
   return (
     <div className={styles.wraper}>
@@ -47,19 +49,26 @@ export default PriceCard;
 
 export const Card = ({ data }) => {
   return (
-    <main style={data.style} className={styles.card_wraper}>
-      <div style={data.style2} className={styles.first_part}>
+    <main style={data.style ? data.style : null} className={styles.card_wraper}>
+      <div
+        style={data.style2 ? data.style2 : null}
+        className={styles.first_part}
+      >
         <h2>{data.head}</h2>
-        <span>${data.cutPrice}/mo</span>
-
-        <p>
-          <span>$</span>
-          {data.price}
-          <span style={{ fontSize: "14px" }}>/mo</span>
-        </p>
-
+       {
+        data.cutPrice? <span>${data.cutPrice}/mo</span>:null
+       }
+        {data.text ? (
+          <p style={data.paraStyle?data.paraStyle:null}>{data.text}</p>
+        ) : (
+          <p>
+            <span>$</span>
+            {data.price}
+            <span style={{ fontSize: "14px" }}>/mo</span>
+          </p>
+        )}
         <button style={{ background: data.buttonColor }}>
-          Get Started
+          {data.buttonText ? data.buttonText : "Get Started"}
           <FaLongArrowAltRight
             style={{
               fontSize: "1.2rem",
